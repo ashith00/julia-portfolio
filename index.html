@@ -9,14 +9,31 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Julia - I'm User Interface Designer & Developer.</title>
+  <title>Portfolio</title>
   <meta name="title" content="Julia - I'm User Interface Designer & Developer.">
   <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- 
     - google font link
@@ -48,7 +65,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo-dark.svg" width="64" height="24" alt="Julia home">
+        <img src="./assets/images/new-logo.svg" width="100" height="20" alt="Julia home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -66,64 +83,85 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="/" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About</a>
+            <a href="/about.html" class="navbar-link">About</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="navbar-link">Projects</a>
-          </li>
+          </li> -->
 
           <li>
-            <a href="#" class="navbar-link">Blog</a>
+            <a href="https://blog.ashish.info/" target="_blank" ref="doreffer" class="navbar-link">Blog</a>
           </li>
 
-          <li>
-            <a href="#" class="navbar-link">Contact</a>
-          </li>
+          <style>
+            @media (max-width: 991px) {
+              .big-screen-asdf a{
+                display: none;
+              }
+            }
+            @media (min-width: 992px) {
+              .small-screen-asdf a{
+                display: none;
+              }
+            }
+          </style>
+
+           <div class="big-screen-asdf">
+            <li>
+                <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </div>
+
+          <div class="small-screen-asdf">
+            <li>
+              <a href="#contact" data-nav-toggler class="navbar-link">Contact</a>
+            </li>
+          </div>
 
         </ul>
 
         <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+          <a href="mailto:contact@ashish.info" class="contact-link">contact@ashish.info</a>
 
-          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+          <!-- <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a> -->
         </div>
 
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://github.com/ashith00/" target="_blank" rel="noreffer" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/ashish-thakur-581628220/" target="_blank" rel="noreffer" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-dribbble"></ion-icon>
             </a>
-          </li>
+          </li> -->
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/who_ashis/" target="_blank" rel="noreffer" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -156,26 +194,30 @@
             <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Julia" class="w-100"
               data-reveal="top">
 
-            <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
-              data-reveal="top" data-reveal-delay="0.25s">
+            <!-- <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
+              data-reveal="top" data-reveal-delay="0.25s"> -->
           </figure>
 
           <div class="hero-content">
 
             <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm User Interface Designer & Developer.
+              Passionate Developer Creating Solutions.
             </h1>
 
             <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very passionate
-              about the work that I do.
+              I am a dedicated and skilled developer, passionate about creating innovative solutions and excelling in technical challenges.
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#" class="btn btn-primary">See My Works</a>
+              <!-- <a href="#" class="btn btn-primary">See My Works</a> -->
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+              <!-- <a href="#" class="btn btn-secondary">Contact Me</a> -->
+              <a href="#" class="btn btn-secondary">Resume</a>
             </div>
+
+            <!-- <div class="last-point" data-reveal="top" data-reveal-delay="1s">
+              still learning..
+            </div> -->
 
           </div>
 
@@ -351,7 +393,7 @@
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <!-- <section class="section project" aria-labelledby="project-label">
         <div class="container">
 
           <div class="title-wrapper" data-reveal="top">
@@ -493,7 +535,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -503,7 +545,7 @@
         - #CONTACT
       -->
 
-      <section class="section contact" aria-label="contact">
+      <section id="contact" class="section contact" aria-label="contact">
         <div class="container">
 
           <div class="contact-card">
@@ -526,14 +568,17 @@
             <form action="" class="contact-form" data-reveal="right">
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
+                <!-- <input type="text" name="name" placeholder="Name *" required class="input-field">
 
                 <input type="email" name="email_address" placeholder="Email *" required class="input-field">
               </div>
 
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+              <textarea name="message" placeholder="Message *" required class="input-field"></textarea> -->
+              <h2>
+                Wanna Chat<br>Click below to get in touch
+              </h2>
 
-              <button type="submit" class="btn btn-secondary">Send message</button>
+              <button type="submit" class="btn btn-secondary"><a href="mailto:contact@ashish.info">Send Email</a></button>
 
             </form>
 
@@ -557,38 +602,38 @@
     <div class="container">
 
       <p class="copyright">
-        © 2022 codewithsadee. All rights reserved.
+        © 2024 Ashish Thakur. All rights reserved.
       </p>
 
       <ul class="social-list">
 
         <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
+          <a href="https://github.com/ashith00/" target="_blank" rel="noreffer" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
           </a>
         </li>
 
-        <li>
+        <!-- <li>
           <a href="#" class="social-link">
             <ion-icon name="logo-facebook"></ion-icon>
           </a>
-        </li>
+        </li> -->
 
-        <li>
+        <!-- <li>
           <a href="#" class="social-link">
             <ion-icon name="logo-dribbble"></ion-icon>
           </a>
-        </li>
+        </li> -->
 
         <li>
-          <a href="#" class="social-link">
+          <a href="https://www.instagram.com/who_ashis/" target="_blank" rel="noreffer" class="social-link">
             <ion-icon name="logo-instagram"></ion-icon>
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-youtube"></ion-icon>
+          <a href="https://www.linkedin.com/in/ashish-thakur-581628220/" target="_blank" rel="noreffer" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
 

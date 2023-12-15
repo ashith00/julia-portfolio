@@ -362,8 +362,10 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .hero {
-  padding-block-start: calc(var(--section-padding) + 50px);
+  /* padding-block-start: calc(var(--section-padding) + 50px); */
   background-color: var(--cultured);
+  padding-block: inherit;
+
 }
 
 .hero .container {
@@ -373,8 +375,10 @@ body.nav-active { overflow: hidden; }
 
 .hero-banner {
   position: relative;
+  bottom: 120px;
   max-width: max-content;
   margin-inline: auto;
+  background-position: 0% ;
 }
 
 .hero-banner .w-100 {
@@ -384,8 +388,9 @@ body.nav-active { overflow: hidden; }
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-position: center;
-  mask-size: auto;
-  -webkit-mask-size: auto;
+  mask-size: 100px;
+  -webkit-mask-size: 630px;
+  
 }
 
 .hero .shape {
@@ -397,7 +402,16 @@ body.nav-active { overflow: hidden; }
 
 .hero-content { text-align: center; }
 
-.hero .section-text { margin-block: 24px 36px; }
+.hero .hero-title{
+  position: absolute;
+  top: 320px;
+}
+
+.hero .section-text { 
+  margin-block: 24px 36px; 
+  position: absolute;
+  top: 425px;
+}
 
 .btn-wrapper {
   display: flex;
@@ -405,6 +419,9 @@ body.nav-active { overflow: hidden; }
   justify-content: center;
   align-items: center;
   gap: 12px;
+  position: absolute;
+  top: 605px;
+  /* right: 500px; */
 }
 
 
@@ -682,6 +699,7 @@ textarea.input-field {
   /**
    * CUSTOM PROPERTY
    */
+
 
   :root {
 
